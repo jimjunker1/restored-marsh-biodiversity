@@ -13,16 +13,16 @@ output: github_document
 
 ## Reproducing the code
 
-| Step                                       |               Script                |                      Vignette                       |
-| ------------------------------------------ | :---------------------------------: | :-------------------------------------------------: |
-| clean data                                 |    [:computer:](code/01_load-data.R)   |   [:page_facing_up:]()   |
-| measurement of biodiversity                |    [:computer:](02_analyze-MoB.R)    |   [:page_facing_up:]()    | 
-| partition beta diversity                   |    [:computer:](03_analyze-beta-partition.R)    |   [:page_facing_up:]()    |
-| plot abundances                          |    [:computer:](04_make-abundance-figures.R) | [:page_facing_up:]() |
-| plot diversities                           |    [:computer:](05_make-diversity-figures.R)    |   [:page_facing_up:]()    |
-| plot rarefactions                          |    [:computer:](06_make-rarefaction-figures.R)   |  [:page_facing_up:]()   | 
-| plot similarities                          |    [:computer:](07_make-dendrogram-figures.R)    |    [:page_facing_up:]()    |
-| plot effects                       |    [:computer:](08_make-effects-figures.R)   |  [:page_facing_up:]()   |
-| plot general effects    |   [:computer:](09_make-gen-effect-figures.R)   |    |
-| plot effects on S   |   [:computer:](10_make-effect-S-figures.R)    |   |
-| plot SAD    |   [:computer:](11_make-SAD-figures.R)   |   |
+| Step                         |               Script                               |
+| ---------------------------- | :------------------------------------------------: |
+| clean data                   |    [:computer:](code/01_load-data.R)               |
+| measurement of biodiversity  |    [:computer:](code/02_analyze-MoB.R)             |
+| partition beta diversity     |    [:computer:](code/03_analyze-beta-partition.R)  |
+| plot abundances              |    [:computer:](code/04_make-abundance-figures.R)  |
+| plot diversities             |    [:computer:](code/05_make-diversity-figures.R)  |
+| plot rarefactions            |    [:computer:](code/06_make-rarefaction-figures.R)|
+| plot similarities            |    [:computer:](code/07_make-dendrogram-figures.R) |
+| plot effects                 |    [:computer:](code/08_make-effects-figures.R)    |
+| plot general effects         |    [:computer:](code/09_make-gen-effect-figures.R) |
+| plot effects on S            |    [:computer:](code/10_make-effect-S-figures.R)   |
+| plot SAD                     |    [:computer:](code/11_make-SAD-figures.R)        |
