@@ -38,7 +38,6 @@ site_order = c("LHA","LHB","LHC","WPH01","WPH02","PS07")
 color_scheme = c("#01665e","#5ab4ac", "#ffffb2","#fed98e","#fe9929","#cc4c02")
 color_scheme2 = c("#01665e","#5ab4ac","#ffffcc","#a1dab4","#41b6c4","#225ea8")
 shape_scheme = c(22,22,21,21,21,21)
-theme_set(theme_minimal())
 
 group_names = c( "Surface\nMicrobes", "Below-Surface\nMicrobes","Plants", "Macroinfauna", "Spiders", 
                  "On-marsh\nnekton", "Full minnow","Off-marsh\nnekton")

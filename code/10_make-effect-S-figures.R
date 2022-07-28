@@ -1,4 +1,4 @@
-here::i_am('code/10_make_fig_effect_S.R')
+here::i_am('code/10_make-effect-S-figures.R')
 require (cowplot)
 require (ggplot2)
 

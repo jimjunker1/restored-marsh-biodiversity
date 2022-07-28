@@ -1,8 +1,8 @@
-here::i_am("code/02_analyze_MoB.R")
+here::i_am("code/02_analyze-MoB.R")
 
 # Load all the community matrices
 
-# Due to bug in source() function. 01_load_data.R script must be run by hand because of differential encoding and special characters treatment in`fix_latlong()`
+# Due to bug in source() function. 01_load-data.R script must be run by hand because of differential encoding and special characters treatment in`fix_latlong()`
 
 # Load packages
 cl <- makeCluster(detectCores() - 1)

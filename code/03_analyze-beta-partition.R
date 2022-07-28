@@ -1,8 +1,8 @@
-here::i_am("code/03_analyze_beta_partition.R")
+here::i_am("code/03_analyze-beta-partition.R")
 
 # Load all the community matrices
 
-# Due to bug in source() function. 01_load_data.R script must be run by hand because of differential encoding and special characters treatment in`fix_latlong()`
+# Due to bug in source() function. 01_load-data.R script must be run by hand because of differential encoding and special characters treatment in`fix_latlong()`
 
 marsh_attr = data.frame(marsh_id = c("LHA","LHB","LHC","WPH01","WPH02","PS07"),
                         group_id = c("restored","restored","natural","natural","natural","natural")

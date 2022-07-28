@@ -6,7 +6,7 @@ if (!require("pairwiseAdonis")) install_github("pmartinezarbizu/pairwiseAdonis/p
 devtools::install_github("MoBiodiv/mobr")
 # Install packages ----------------
 pacman::p_load(here, styler, rmarkdown, readxl, tidyverse, rfishbase, taxize, mobr, vegan, parallel, usedist, gplots)
-here::i_am("code/01_load_data.R")
+here::i_am("code/01_load-data.R")
 theme_set(theme_minimal())
 
 # !++++    HELPER FUNCTIONS    ++++!#

@@ -1,8 +1,8 @@
 # Load all the community matrices
 
-# Due to bug in source() function. 01_load_data.R script must be run by hand because of differential encoding and special characters treatment in`fix_latlong()`
-source(here::here("code/03_analyze_beta_partition.R"))
-here::i_am("code/04_make-figures.R")
+# Due to bug in source() function. 01_load-data.R script must be run by hand because of differential encoding and special characters treatment in`fix_latlong()`
+source(here::here("code/03_analyze-beta-partition.R"))
+here::i_am("code/04_make-abundance-figures.R")
 
 # make final figures manuscript
 # load in analysis data and assign names
