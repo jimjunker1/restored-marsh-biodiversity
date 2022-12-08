@@ -6,7 +6,7 @@ output: github_document
 
 ## Summary
 
-This is the code repository for the published article, *Can created saltmarshes match biodiversity of pre-existing ones across scales? An assessment from microbes to predators*, published in *Ecosphere*
+This is the code repository for the article, *Can created saltmarshes match biodiversity of pre-existing ones across scales? An assessment from microbes to predators*, published in *Ecosphere*.Scripts for reproducing the analyses and figures can be found below. 
 
 <!-- Badges start -->
 
@@ -28,3 +28,19 @@ This is the code repository for the published article, *Can created saltmarshes 
 | plot effects on S            |    [:computer:](code/10_make-effect-S-figures.R)   |
 | plot SAD                     |    [:computer:](code/11_make-SAD-figures.R)        |
 
+## Reproducibility
+
+Version information for the when this repository was last updated can be found below.
+
+<details><summary>Reproducibility receipt</summary>
+
+```{r version info, warning=FALSE, message=FALSE}
+## datetime
+Sys.time()
+
+source(here::here("code/01_load-data.R"))
+## session info
+sessionInfo()
+```
+
+</details>

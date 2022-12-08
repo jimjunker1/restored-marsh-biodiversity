@@ -1,4 +1,3 @@
-here::i_am("code/01_load-data.R")
 # load required project packages here
 ## script to load and munge data for Measurement of Biodiversity analysis of restored vs unrestored data.
 if(!require(devtools)) install.packages('devtools') else{library(devtools)}
@@ -6,37 +5,14 @@ if(!require(pacman)) install.packages('pacman') else{library(pacman)}
 if (!require("pairwiseAdonis")) install_github("pmartinezarbizu/pairwiseAdonis/pairwiseAdonis")
 devtools::install_github("MoBiodiv/mobr")
 # Install packages ----------------
-pacman::p_load(here, styler, rmarkdown, readxl, tidyverse, rfishbase, taxize, mobr, vegan, parallel, usedist, gplots)
+pacman::p_load(here, styler, rmarkdown, tidyverse, mobr, vegan, parallel, usedist, gplots)
+here::i_am("code/01_load-data.R")
 theme_set(theme_minimal())
 
 # !++++    HELPER FUNCTIONS    ++++!#
 
 '%ni%' <- Negate('%in%')
 
-#'
-#'@title read_excel_allsheets
-#'@description This function reads all sheets of an excel .xls* file and returns them as a list
-#'@import readxl
-#'@param filename string; point to the .xls* filepath
-#'@param tibble logical; should the function return sheets as tibbles? Default is TRUE
-#'@returns a nested list of all excel sheets as tibble objects. 
-#'
-
-read_excel_allsheets <- function(filename, tibble = TRUE,...) {
-  if (grepl(".csv", filename)) {
-    x <- read.csv(filename, header = TRUE)
-  } else {
-    require(readxl)
-    # I prefer straight data.frames
-    # but if you like tidyverse tibbles (the default with read_excel)
-    # then just pass tibble = TRUE
-    sheets <- readxl::excel_sheets(filename)
-    x <- lapply(sheets, function(X) readxl::read_excel(filename, sheet = X,...))
-    if (!tibble) x <- lapply(x, as.data.frame)
-    names(x) <- sheets
-  }
-  x
-}
 #' @description This function attempts to detect the format of lat-long coordinates
 #'  and then standardizes them to decimal degrees.
 #' @export numeric vector of converted decimal degrees
