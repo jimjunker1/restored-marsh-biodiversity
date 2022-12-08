@@ -1,7 +1,6 @@
 here::i_am("code/02_analyze-MoB.R")
 
 # Load all the community matrices
-
 # Due to bug in source() function. 01_load-data.R script must be run by hand because of differential encoding and special characters treatment in`fix_latlong()`
 
 # Load packages
@@ -9,7 +8,7 @@ cl <- makeCluster(detectCores() - 1)
 
 #Load functions
 source("code/plot_mobr_out2.R")
-source("code/plot_abu2.R")
+# source("code/plot_abu2.R")
 # clusterEvalQ(cl, library(mobr))
 # clusterExport(cl, '')
 
@@ -119,7 +118,10 @@ save(mob_stats,
 
 
 ## Run the delta stats analysis within and among created marshes
+## This code is currently commented out as it takes a bit of time and computation to run. The objects are pre-made and loaded below.
+## If you want/need to rerun the code, you can here.
 
+load ('sub-projects/restored-marsh-diversity/analyses_output/output_analyses.RData')
 # pairwise_mobr = function(marshes = NULL, comm = NULL, attr = NULL, comm_name = NULL, string_concat = NULL,...){
 #   rows = grep(paste(unlist(marshes), collapse = "|"), attr$marsh_id)
 #   comm = comm[rows,] %>% .[,colSums(.) >0]
@@ -175,5 +177,3 @@ save(mob_stats,
 # amongList = purrr::map(acrossMarshes, ~.x %>% unlist %>% rep(.,8) %>% split(., ceiling(seq_along(.)/2)))
 # 
 # amongMarshesList = purrr::map(amongList, ~purrr::pmap(list(.x, comm, plot_attr,taxa_names), ~pairwise_mobr(..1,..2,..3, comm_name = ..4, string_concat = "Among")))#,
-
-load ('sub-projects/restored-marsh-diversity/analyses_output/output_analyses.RData')

@@ -4,12 +4,13 @@ output: github_document
 
 # Restored Marsh Biodiversity
 
+## Summary
+
+This is the code repository for the published article, *Can created saltmarshes match biodiversity of pre-existing ones across scales? An assessment from microbes to predators*, published in *Ecosphere*
+
 <!-- Badges start -->
 
 <!-- Badges end -->
-
-## Summary
-
 
 ## Reproducing the code
 
@@ -26,3 +27,4 @@ output: github_document
 | plot general effects         |    [:computer:](code/09_make-gen-effect-figures.R) |
 | plot effects on S            |    [:computer:](code/10_make-effect-S-figures.R)   |
 | plot SAD                     |    [:computer:](code/11_make-SAD-figures.R)        |
+
